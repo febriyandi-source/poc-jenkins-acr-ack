@@ -1,0 +1,11 @@
+{
+  "name": "poc-jenkins-acr-ack",
+  "version": "1.0.0",
+  "description": "PoC Jenkins -> ACR -> ACK",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
