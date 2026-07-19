@@ -39,7 +39,7 @@ pipeline {
                         sed -i 's|image:.*|image: ${FULL_IMAGE_NAME}|g' k8s-deployment.yaml
                         cat k8s-deployment.yaml
                         kubectl apply -f k8s-deployment.yaml
-                        kubectl rollout status deployment/my-app-deployment --timeout=120s
+                        kubectl rollout status deployment/my-app-deployment-from-jenkins --timeout=120s
                     """
                 }
             }
