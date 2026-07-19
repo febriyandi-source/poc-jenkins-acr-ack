@@ -23,7 +23,7 @@ pipeline {
             steps {
                 echo "📤 Pushing image to ACR..."
                 script {
-                    docker.withRegistry("https://${ACR_REGISTRY}", 'acr-creds') {
+                    docker.withRegistry("https://${ACR_REGISTRY}", 'acr_creds') {
                         docker.image("${FULL_IMAGE_NAME}").push()
                         docker.image("${FULL_IMAGE_NAME}").push('latest')
                     }
